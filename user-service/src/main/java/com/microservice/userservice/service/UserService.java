@@ -19,9 +19,7 @@ public class UserService {
 		return userRepository.save(user);
 	}
 
-	public User getUserById(Integer userId) {
-		return userRepository.getById(userId);
-	}
+	public User getUserById(Integer userId) { return userRepository.getById(userId);}
 
 	public String updateAccountBalance(Integer userId, Double amount) {
 		User user = userRepository.getById(userId);
