@@ -52,12 +52,13 @@ public class OrderProcessingConsumer {
 				}
 			}
 		} catch (JsonProcessingException e) {
-			e.printStackTrace();// log
+			e.printStackTrace();
+			// log
 		}
 	}
 	public String getOrderDetails(Exception ex)
 	{
-		//Fall back method to
+		//Fall back method to do anything related to fall back
 		return ex.getMessage()+"Circuit Breaker works!!!!!!";
 	}
 }

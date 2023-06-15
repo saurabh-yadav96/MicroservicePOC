@@ -26,9 +26,9 @@ public class UserService {
 		if (user != null) {
 			user.setAvailableAmount(amount);
 			userRepository.save(user);
-			return "Amount Updated!!!";
+			return "Amount Updated!!!!!!";
 		} else {
-			return "User not Found";
+			return "User not Found !!!";
 		}
 
 	}

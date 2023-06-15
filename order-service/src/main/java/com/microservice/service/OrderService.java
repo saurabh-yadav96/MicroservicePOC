@@ -36,6 +36,7 @@ public class OrderService {
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 			// todo Log here
+			//change the exception handler
 		}
 		return "Your order with " + order.getOrderId() + " has been placed ! we will notify once it is confirmed";
 	}
